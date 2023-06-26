@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #0c016d;
+}
+.left-menu{
+
+    height: 100%;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #0c016d;
+    position: fixed;
+
+    overflow: hidden;
+    transition: .5s;
+}
+nav.menu-lateral.expandir{
+    width: 250px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+}
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.ativo{
+    background: #686868;
+}
+ul li.item-menu:hover{
+    background: #686868;
+}
+ul li.item-menu a{
+    display: flex;
+
+    color: white;
+    font-size: 20px;
+
+    padding: 20px 4%;
+    line-height: 40px;
+
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+ul li.item-menu a .txt-link{
+    opacity: 0;
+
+    transition: 1s;
+    margin-left: 70px;
+}
+nav.menu-lateral.expandir .txt-link{
+    opacity: 1;
+    margin-left: 40px;
+}
+ul li.item-menu a .icon{
+   
+    margin-left: 8px;
+}
+
